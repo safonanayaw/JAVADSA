@@ -1,13 +1,25 @@
 
 public class Main {
     public static void main(String[] args) {
-    LinkList node = new LinkList();
-    node.addLast(1);
-    node.addLast(2);
-    node.addLast(3);
-    node.addLast(4);
-    node.addLast(5);
-    node.removeLast();
-    System.out.println(node.contains(3));
+    DynamicArray dynamicArray = new DynamicArray(5);
+
+    dynamicArray.add("A");
+    dynamicArray.add("B");
+    dynamicArray.add("C");
+    dynamicArray.add("D");
+    dynamicArray.add("E");
+    dynamicArray.add("F");
+
+    dynamicArray.delete("D");
+    dynamicArray.delete("E");
+    dynamicArray.delete("F");
+
+
+
+    System.out.println("size: " + dynamicArray.size);
+    System.out.println("capacity: " + dynamicArray.capacity);
+
+    System.out.println(dynamicArray);
+
     }
 }
