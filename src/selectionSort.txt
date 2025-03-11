@@ -1,3 +1,12 @@
+Selection Sort
+Search through an array and keep track of the minimum during each iteration.
+At the end of each iteration, we swap variables.
+Time complexity is O(n^2);
+ADV
+Good for small data sets
+DISADV
+Bad for large data sets
+Code
 public class Main {
     public static void main(String[] args) {
         int[] array = {4, 6, 7, 9, 1, 5, 8, 3, 2};
