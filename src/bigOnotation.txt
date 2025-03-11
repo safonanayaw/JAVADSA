@@ -1,0 +1,29 @@
+Big O Notation
+"How code slows es data grows"
+1.Describes the perfomance of algorithm as the amount of data increase.
+2.Machine independent (# of steps to completion)
+3. Ignore smaller operations O(n + 1) -> O(n)
+Example
+O(1): Constant Time
+    1.Random access of an element in an array
+    2.Insertion at the beginning of linkedList
+
+O(log n): Logarithmic Time
+    1. Binary Search
+
+ 0(n): Linear Time
+    1.Looping through an array
+    2.Searching through a linked List
+
+O(n log n): Quasiliear Time
+    1.Quick sort
+    2.Merge Sort
+    3.Heap Sort
+
+, O(n^2): Quadratic Time
+    1.Insertion Sort
+    2.Selection Sort
+    3.Bubble Sort
+
+O(n!): Factorial Time
+    1. Traveling salesman problem

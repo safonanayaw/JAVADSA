@@ -1,3 +1,12 @@
+Interpolation Search
+Improvement over binary search best used for "uniformly" distributed data
+"guesses" where a value might be based on calculated probe results.
+If probes is incorrect search area is narrowed, and a new probe is calculated.
+
+average case: O(log(log(n)))
+worse case: 0(n) [values increase exponentially]
+
+Code Example
 public class Main {
     public static void main(String[] args) {
         int[] array = {1, 2, 4, 8, 16, 32, 64, 128, 256, 512, 1024};
@@ -32,3 +41,4 @@ public class Main {
 
     }
 }
+

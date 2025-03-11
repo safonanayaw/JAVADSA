@@ -75,3 +75,47 @@ DISADV
 1.Waste more memory
 2.Shrinking/Expanding is time consuming O(n)
 3.Shifting elements is time consuming O(1)
+
+
+Camparing LinkedList vrs ArrayList with java nanoTime
+import java.util.ArrayList;
+import java.util.LinkedList;
+
+public class Main {
+    public static void main(String[] args) {
+        LinkedList<Integer> linkedList = new LinkedList<Integer>();
+        ArrayList<Integer> arrayList = new ArrayList<Integer>();
+
+        long startTime;
+        long endTime;
+        long elapseTime;
+
+        for(int i = 0; i < 1000000; i++){
+            linkedList.add(i);
+            arrayList.add(i);
+        }
+//        **********************LinkedList******************
+        startTime = System.nanoTime();
+//        do something
+//        linkedList.get(500000);
+            linkedList.get(999999);
+
+
+        endTime = System.nanoTime();
+        elapseTime = endTime - startTime;
+
+        System.out.println("LinkedList:\t" + elapseTime + " ns");
+
+//        **********************ArrayList******************
+        startTime = System.nanoTime();
+//        do something
+//        arrayList.get(500000);
+        arrayList.get(999999);
+
+
+        endTime = System.nanoTime();
+        elapseTime = endTime - startTime;
+
+        System.out.println("arrayList:\t" + elapseTime + " ns");
+    }
+}

@@ -1,0 +1,36 @@
+Linear Search
+Linear Search Iterate through a collection of elements one at a time
+Runtime complexity: O(n)
+
+DISADV
+Slow for large data set
+
+ADV
+1.Good for searches of small to medium data sets
+2.Does not need to be sorted
+3.Good for data structures without random access (Linked list).
+Example of linear search
+
+public class Main {
+    public static void main(String[] args) {
+        int[] array = {4, 2, 4, 5, 2, 6, 7, 8, 7, 4};
+
+        int index = linearSearch(array, 7);
+        if(index != -1){
+            System.out.println("Element found at index: " + index);
+        }else{
+           System.out.println("Element not found");
+        }
+
+    }
+
+    private static int linearSearch(int[] array, int value) {
+        for(int i = 0; i < array.length; i++){
+            if(array[i] == value){
+                return i;
+
+            }
+        }
+        return -1;
+    }
+}
